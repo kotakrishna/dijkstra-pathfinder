@@ -4,9 +4,9 @@ export const BoxContainer = styled.p`
 
     width: 25px;
   height: 25px;
-  outline: 1px solid rgb(11, 29, 43);
+  border: 1px solid rgb(11, 29, 43) ;
   display: inline-block;
-  margin: 5px;
+  margin: 2px;
   border-radius: 50%;
   &:hover{
     background-color: rgb(11, 29, 43);

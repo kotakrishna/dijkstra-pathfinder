@@ -4,6 +4,16 @@
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
+    button{
+      min-width: 130px;
+      min-height: 50px;
+      font-size: 18px;
+      border-radius: 10px;
+      &:nth-child(1){
+        background-color: rgba(17, 104, 217, 0.75);
+        color: white;
+      }
+    }
 }
 .box{
     width: 25px;

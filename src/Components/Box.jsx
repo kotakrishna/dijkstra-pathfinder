@@ -5,6 +5,7 @@ export default function Box(data) {
     const {row,col,isStart,isEnd,distance,isVisited,isWall,AssignStart,AssignEnd} = data
     return (
         <BoxContainer 
+        style={{borderRadius:"50%"}}
         className="box"
          id={`node-${row}-${col}`} 
         onClick={()=>AssignStart(row,col)}

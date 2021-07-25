@@ -38,9 +38,9 @@ export default function Grid() {
       }
     const createGrid = () =>{
         let grid=[];
-        for(let i=0;i<10;i++){
+        for(let i=0;i<16;i++){
             let EachRow =[];
-            for(let j=0;j<10;j++){
+            for(let j=0;j<40;j++){
                 EachRow.push(createBox(j,i));
             }
             grid.push(EachRow);
@@ -107,7 +107,7 @@ export default function Grid() {
     let [selectingFilter,setSelectingFilter]  = React.useState(1)
     return (
 
-        <div  style={{margin: "100px 0 0"}}>
+        <div  style={{margin: "50px 0 0"}}>
             <div>
                 <h1>Dijkstra Logic to Find Shortest Path</h1>
             </div>
@@ -126,6 +126,7 @@ export default function Grid() {
                             {row.map((colm,j)=>{
                             const {row,col,isStart,isFinish,distance,isVisited,isWall} = colm;
                          return(    <Box
+                         
                               key={j}
                               row={row}
                             col={col} 
